@@ -1,70 +1,91 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
-         struct bayraktar_Ukraine
+extern void Check_user();
+
+
+struct Special_Date {
+    string welcome;
+    int number;
+    int data;
+    int CVV;
+
+
+};
+
+struct User_login_in
+{
+    void Check_user(string User_password, string User_login)
+    {
+        string login = "IlonMask";
+        string IdentifyCode = "1234567890";
+
+        cout << "Enter login: ";
+        cin >> User_login;
+
+        cout << "Enter IdentifyCode: ";
+        cin >> User_password;
+
+        if (User_login == login && User_password == IdentifyCode)
         {
-                int X;
-                int Y;
-                int MaxSpeed;
-                float Price;
-        };
-
-        struct bayraktar_russia
-        {
-                int X;
-                int Y;
-                int MaxSpeed;
-                float Price;
-        };
-
-        struct bayraktar_moskovia  /*московия*/
-        {
-                int X;
-                int Y;
-                int MaxSpeed;
-                float Price;
-        };
-
-        int main()
-        {
-                cout << "bayraktar : \t";
-//B_U = bayraktar Ukraine
-                int B_U_X = 100;
-                int B_U_Y = 200;
-                int B_U_MaxSpeed = 22000;
-                int B_U_Price = 100000000;
-
-                cout << B_U_X << ", \t";
-                cout << B_U_Y <<  ", \t";
-                cout << B_U_MaxSpeed << "km/h" << ", \t";
-                cout << B_U_Price  << "$" << "\t \n";
-
-
-                cout << "bayraktar_Ukraine : \t ";
-
-                int B_R_X = 00;
-                int B_R_Y = 00;
-                int B_R_MaxSpeed = 10;
-                const char* B_R_Price = "net v nalichii";
-
-                cout << B_R_X << ", \t";
-                cout << B_R_Y << ", \t";
-                cout << B_R_MaxSpeed  << "km/h" << ", \t";
-                cout << B_R_Price << "$" << "\t \n";
-
-
-                cout << "bayraktar_moskovia : \t ";
-
-                int B_M_X = 10;
-                int B_M_Y = 10;
-                int B_M_MaxSpeed = 300;
-                int B_M_Price = 25000;
-
-                cout << B_M_X << ", \t";
-                cout << B_M_Y << ", \t";
-                cout << B_M_MaxSpeed << "km/h" << ", \t";
-                cout << B_M_Price << "$" << "\t";
-
+            cout << "You are retarded, pls leave from your life!" << endl;
+            //типо Илон против Украины.
         }
-                           
+        else
+        {
+            cout << "Error" << endl;
+
+            exit(0);
+        }
+    };
+
+};
+
+
+// DONPEO= DONBAAAAAAAS People)))
+struct DONPEO
+{
+    string Axmetov;
+    int VPOcode;
+};
+
+
+
+
+
+int main()
+{
+
+    Special_Date sd;
+    sd.welcome = "Welcome";
+    sd.number = 1313;
+    sd.data = 10;
+    sd.CVV = 666;
+    cout << sd.welcome << endl;
+    cout << "Number: " << sd.number << endl;
+    cout << "DATA: " << sd.data << endl;
+    cout << "CVV: " << sd.CVV << endl;
+
+
+
+    User_login_in uli;
+    string login;
+    string password;
+    uli.Check_user(login, password);
+
+    DONPEO tfa;
+    tfa.Axmetov = "AXMETOV";
+    tfa.VPOcode;
+    cout << tfa.Axmetov << endl;
+
+    cout << "Enter VPOcode: ";
+    cin >> tfa.VPOcode;
+
+
+    system("pause");
+    return 0;
+
+
+}
