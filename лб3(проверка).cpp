@@ -58,12 +58,13 @@ void menu()
         password = **enter_password();
         break;
         case 3:
-        cvv = **enter_cvv(); void print_result()
+        cvv = **enter_cvv(); void print_result() ;
         break;
         default:
         exit(0);
         }
-        void exit() {
+        void exit() 
+        {
         int* number = 1234;
         switch (enter_password)
         {
